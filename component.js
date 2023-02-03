@@ -100,7 +100,7 @@ customElements.define('dual-nav', class extends HTMLElement {
         <input type=checkbox id=left>
         <slot name=left></slot>
         <label for=left data-icon=>Info</label>
-        <a href=# id=logo><img src=/assets/logo.svg#r alt='○○ Artifical Intelligence Limited'></a>
+        <a href=# id=logo><img src=assets/logo.svg#r alt='○○ Artifical Intelligence Limited'></a>
         <input type=checkbox id=right>
         <slot name=right></slot>
         <label for=right data-icon=>Work</label>`;
