@@ -232,16 +232,16 @@
     background:hsl(310,55%,77%);
 }
 #projects turn-book:nth-of-type(1) .cover:last-child::part(front) {
-    background:url('/assets/cover-dashboard.jpg') center / cover;
+    background:url('assets/cover-dashboard.jpg') center / cover;
 }
 #projects turn-book:nth-of-type(2) .cover:last-child::part(front) {
-    background:url('/assets/cover-network.jpg') center / cover;
+    background:url('assets/cover-network.jpg') center / cover;
 }
 #projects turn-book:nth-of-type(3) .cover:last-child::part(front) {
-    background:url('/assets/cover-books.jpg') center / cover;
+    background:url('assets/cover-books.jpg') center / cover;
 }
 #projects turn-book:nth-of-type(4) .cover:last-child::part(front) {
-    background:url('/assets/cover-gears.jpg') center / cover;
+    background:url('assets/cover-gears.jpg') center / cover;
 }
 
 #playground li {

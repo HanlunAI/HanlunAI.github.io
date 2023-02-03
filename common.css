@@ -25,20 +25,20 @@ body {
 }
 @font-face {
     font-family: 'FA';
-    src: url('/assets/fa-solid-900.woff2');
+    src: url('assets/fa-solid-900.woff2');
 }
 @font-face {
     font-family: 'FAb';
-    src: url('/assets/fa-brands-400.woff2');
+    src: url('assets/fa-brands-400.woff2');
 }
 @font-face {
     font-family: 'header';
-    src: url('/assets/Raleway-VariableFont_wght.ttf');
+    src: url('assets/Raleway-VariableFont_wght.ttf');
     font-weight: 800;
 }
 @font-face {
     font-family: 'logo-serif';
-    src: url('/assets/SawarabiMincho-Regular.ttf');
+    src: url('assets/SawarabiMincho-Regular.ttf');
 }
 h1,h2,h3,turn-book header h4 {
     font-family: 'header';

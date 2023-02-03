@@ -172,7 +172,7 @@ customElements.define('img-blind', class extends HTMLElement {
         figure {
             position:absolute;left:0;top:0;
             width:100%;height:100%;
-            background:url(/assets/office.jpg) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
+            background:url(assets/office.jpg) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
             transform:translateZ(var(--inR));
             border:.01em solid grey;
         }
@@ -186,11 +186,11 @@ customElements.define('img-blind', class extends HTMLElement {
             opacity:0;
         }
         figure:nth-child(2) {
-            background:url(/assets/sphere.png) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
+            background:url(assets/sphere.png) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
             transform:rotateX(120deg) translateZ(var(--inR)) ;
         }
         figure:last-child {
-            background:url(/assets/view.jpg) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
+            background:url(assets/view.jpg) 0 calc(var(--i)*100%/(var(--pieces) - 1)) / cover;
             transform:rotateX(240deg) translateZ(var(--inR));
         }
         </style>`;
