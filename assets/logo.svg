@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <g id="r">
+        <rect x="0" y="0" width="20" height="100"></rect>
+        <rect x="80" y="0" width="20" height="100"></rect>
+        <rect x="25" y="17.5" width="50" height="10"></rect>
+        <rect x="25" y="32.5" width="10" height="50" class="darker"></rect>
+        <rect x="65" y="32.5" width="10" height="50" class="darker"></rect>
+        <rect x="37.5" y="40" width="25" height="5"></rect>
+    </g>
+    <g id="o">
+        <rect x="0" y="0" width="20" height="100"></rect>
+        <rect x="80" y="0" width="20" height="100"></rect>
+        <rect x="25" y="17.5" width="50" height="10"></rect>
+        <rect x="25" y="32.5" width="10" height="50" class="darker"></rect>
+        <rect x="65" y="32.5" width="10" height="50" class="darker"></rect>
+        <rect x="37.5" y="40" width="25" height="5"></rect>
+    </g>
+    <style>
+    #r:target+#o {
+        display:none;
+    }
+    rect {
+        fill:white;
+    }
+    #o rect {
+        fill:hsl(288,55%,33%);
+    }
+    #o rect.darker {
+        fill:hsl(255,55%,33%);
+    }
+    </style>
+</svg>

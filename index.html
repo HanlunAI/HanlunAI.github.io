@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<title>○○人工智能有限公司　○○ Artifical Intelligence Limited</title>
+<meta name=description content="○○ Artificial Intelligence Limited provides end-to-end AI solutions from design, data processing to streamlined applications. We've been working on machine learning applications, deep neural networks, and data-analytics-friendly platforms.">
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<script src=/solid.js></script>
+<script src=/book.js></script> 
+<script src=/card.js></script>
+<script src=/component.js></script>
+<link rel=icon type=image/svg+xml href=/assets/logo.svg>
+<link rel=stylesheet href=/common.css>
+<link rel=stylesheet href=/css.css>
+
+<dual-nav>
+    <a slot=left href=#about>About</a>
+    <a slot=left href=#contacts>Contacts</a>
+    <a slot=left href=/challenges.html>Challenges</a>
+    <a slot=right href=#projects>Projects</a>
+    <a slot=right href='https://○○ai2018.medium.com/' rel=noopener>Research</a>
+    <a slot=right href=#playground>Playground</a>
+</dual-nav>
+
+<input type=checkbox id=popup>
+<label for=popup></label>
+
+<header id=header>
+    <video autoplay loop muted playsinline><source src=/assets/us.mp4></video>
+    <great-icosahedron diameter='6' stroke='0.01'></great-icosahedron>
+    <h1>
+        <img src=/assets/logo.svg alt='○○ Artifical Intelligence Limited'>
+        <b>○○人工智能有限公司</b><b>○○ Artifical Intelligence Limited</b>
+    </h1>
+</header>
+
+<section id=about>
+    <h2>About Us.</h2>
+    <div>
+        <img-blind src="/assets/office.jpg" alt='Office' pieces=5></img-blind>
+        <p>
+            <b>○○ Artificial Intelligence Limited</b> is a subsidiary company of 
+            <a target=_blank rel=noopener href='http://www.○○info.com/eng/'>○○ Information Limited</a>, a conglomerate with activities in multiple fields.
+        </p>
+        <p>
+            This subsidiary company provides end-to-end AI solutions from design, data processing to streamlined applications. 
+            We worked in machine learning applications, deep neural networks, and data-analytics-friendly platforms. 
+        </p>
+    </div>
+    <div>
+        <figure>
+            <i class=flowing></i>
+            <i class=flowing></i>
+            <i class=flowing></i>
+            <i class=flowing></i>
+        </figure>
+        <p>
+            With the mission of adopting the latest technology to empower client enterprises, we build several data-driven DevOps projects across different domains. 
+            These projects involve specialties from data acquisition to data visualization, from continuous monitoring systems to quantitative data analysis.
+        </p>
+    </div>
+</section>
+
+<section id=projects>
+    <h2>Projects.</h2>
+    <div class=toggle>
+        <span>Book<input type=checkbox id=toggle-1><label for=toggle-1></label>Plain</span>
+    </div>
+    <turn-book reading=right-0 id=ContinuousMonitoringSystems cover=/assets/books.jpg auto-contents>
+        <article slot=page data-page=2>
+            <h4>Noise leakage</h4>
+            <p>The Noise Leakage Visualization project is a commercial attempt to build with industrial packages to better utilize sophisticated measurement devices. The post-processing capabilities result in magnitudes of enhancement in signal resolution and the output can be projected to visualize sound leakage.</p>
+            <img src=/assets/projects/noiseleak-1.jpg alt=Noiseleak>
+        </article>
+        <article slot=page data-page=3>
+            <h4>Noise leakage</h4>
+
+            <p>The visualization concerns more on Spatial Domain than Temporal Domain in regards of continuity. (<a target=_blank href=https://drive.google.com/file/d/1azLgBy0VrMIaEBRJMo6aBUs-0hSMIIij/view?usp=sharing>Click here for more details</a>)</p>             
+            <img src=/assets/projects/noiseleak-2.jpg alt=Noiseleak>
+
+        </article>
+        <article slot=page data-page=4>
+            <h4>Noisense</h4>
+            <img src=/assets/projects/ns-1.png alt=Noisense>
+            <p>
+                The Continuous Monitoring System for Noise Sensitive Receivers near construction sites (codename: Noisense) automatically streams 
+                audio to be processed for sound pressure level computation and fast fourier transformation
+                before being passed to a neural network for noise source identification. Results can be visualized on a web dashboard.
+            </p>
+        </article>
+        <article slot=page data-page=5>
+            <h4>Noisense</h4>
+            <h6>Features</h6>
+            <ul>
+                <li>Integrated with type I microphones</li>
+                <li>Instant messenger notification</li>
+                <li>Abnormalities detection</li>
+                <li>Video streaming as alternative data (<a target=_blank href=https://youtu.be/Lokv8vI8iAQ>demo</a>)</li>
+                <li>Hybrid servers to distribute computation expense</li>
+            </ul>
+            <h6>Expertise</h6>
+            <ul>
+                <li>Devices: CentOS</li>
+                <li>Streaming services: FFmpeg</li>
+                <li>Motion detection: OpenCV</li>
+                <li>Web services: MySQL, Node.js, Socket.io</li>
+                <li>Machine learning: PyTorch</li>
+            </ul>
+        </article>
+        <article slot=page data-page=6>
+            <h4>Noisense</h4>
+            <h5>End-to-end data pipeline</h5>
+			<ol>
+				<li>Audio collected by class 1 microphones was streamed to cloud servers</li>
+				<li>A-weighted sound pressure level was calculated with Python</li>
+				<li>The audio was analyzed and classfied with a neural network</li>
+				<li>Calculated level and audio class results were uploaded to a database</li>
+				<li>Web server fetched the results and displayed them on the web dashboard</li>
+			</ol>
+            <img src=/assets/projects/ns-2.jpg alt=Device>
+        </article>
+        <article slot=page data-page=7>
+            <h4>Noisense</h4>
+            <h5>Deep convolutional neural network</h5>
+            To identify whether the noise was generated from the construction site, machine learning was employed.
+            <ol>
+                <li>Employees recorded the time and labelled the noise source on site to prepare for neural network training</li>
+                <li>Labelled audio was transformed to spectrograms</li>
+                <li>ResNet was retrained with the labelled spectrograms to achieve ability to auto classify</li>
+            </ol>
+            <img src=/assets/projects/ns-3.png alt=Spectrogram>
+        </article>
+        <article slot=page data-page=8>
+            <h4>HZL</h4>
+            <img src=/assets/projects/hzl-1.png alt=HZL>
+            <p>
+				The Continuous Monitoring System for large water bodies will be a collaboration 
+				between universities and us involving both Hong Kong and Mainland parties. Please stay tuned!
+			</p>
+        </article>
+    </turn-book>
+
+    <turn-book reading=right-0 id=PlatformDevops auto-contents>
+        <article slot=page data-page=2>
+            <h4>MOOC Platform</h4>
+            <img src=/assets/projects/mkass-1.png alt=MOOC>
+            <p>
+                Starting from the Open edX MOOCs platform under the Python-Django framework, 
+                we developed a cloud-based management platform with both a learning management system with real-time transmission of learning content, generation of assessments and automated grading; 
+                and a content management system with an editing studio. We also integrated the system to a data visualization dashboard for dynamical student performance feedback.
+            </p>
+        </article>
+        <article slot=page data-page=3>
+            <h4>MOOC Platform</h4>
+            <h6>Features</h6>
+            <ul>
+                <li>Easy-to-Scale learning and assessment platform</li>
+                <li>Control of student flow with prerequisite knowledge determination</li>
+                <li>Built-in studio for agile course development</li>
+                <li>Numerous sensors on student footprints for analysis</li>
+                <li>Suitable for carrying out educational experiments</li>
+            </ul>
+			<h6>Expertise</h6>
+			<ul>
+				<li>Framework: Open edX, Django</li>
+				<li>Database: MySQL, MongoDB</li>
+				<li>Data Visualization: Power BI, D3.js</li>
+				<li>Analysis: TDA for time series data</li>
+				<li>Recommendation Engine: Scrapy, Jieba, TensorFlow, DKN</li>
+			</ul>
+        </article>
+        <article slot=page data-page=4>
+            <h4>MOOC Platform</h4>
+			<h5>Quantitative data analysis</h5>
+			<ul>
+				<li>This is part of the DevOps cycle that the collected data will be basis of algorithms to emerge intelligence for platform upgrade</li>
+				<li>Accompanying data collection includes learning footprint with timestamps and some tailor made KPIs</li>
+				<li>Tailor-made KPIs are introduced for student performance analysis; sophisticated methodology is employed for time series data:-</li>
+				<li>Regression and survival analysis are employed for education experiments</li>
+			</ul>
+            <img src=/assets/projects/mkass-2.png alt=Chart>
+        </article>
+        <article slot=page data-page=5>
+            <h4>MOOC Platform</h4>
+            <h5>Knowledge graph visualization</h5>
+			<ul>
+				<li>Visualization for Client's acyclic directed knowledge graph</li>
+				<li>Interactive dashboard for prerequisites information</li>
+			</ul>
+            <img src=/assets/projects/mkass-6.jpg alt='Knowledge tree'>
+        </article>
+        <article slot=page data-page=6>
+            <h4>MOOC Platform</h4>
+            <h5>Recommendation engine</h5>
+			<ul>
+				<li>Data from world-wide sites were scraped for natural langiage processing</li>
+				<li>Processed with Chinese language segmentation and keywords extraction</li>
+				<li>Graph attention neural networks for recommendation</li>
+				<li>Recommend learning modules by learning behaviour and predetermined prerequisites structures</li>
+			</ul>
+        </article>
+    </turn-book>
+
+    <turn-book reading=right-0 id=CurriculumDevops auto-contents>
+        <article slot=page data-page=2>
+            <h4>Curriculum Generations</h4>
+            <img src=/assets/projects/mkass-4.png alt='Machine learning'>
+            <p>
+                To share our vision to a broader audience, we actively participate the development of curriculum towards the next generation.
+                Therefore we've started writing an ICT curriculum to equip students with the latest knowledge and skills of ever-advancing technology.
+            </p>
+        </article>
+        <article slot=page data-page=3>
+            <h4>Curriculum Generations</h4>
+            <h5>Curriculum</h5>
+            50 modules of topics on Information and Communications Technology, including:
+            <ul>
+                <li>Artificial intelligence</li>
+                <li>Object-oriented programming in Python</li>
+                <li>Computational thinking</li>
+                <li>Network technology</li>
+                <li>Computer graphics generation</li>
+                <li>Etc.</li>
+            </ul>
+            <img src=/assets/projects/mkass-3.png alt='ICT curriculum'>
+        </article>
+        <article slot=page data-page=4>
+            <h4>Curriculum Generations</h4>
+            <h6>Features</h6>
+            <ul>
+                <li>Interactive programmable environment: Colab</li>
+                <li>Nurture of web searching skills: Redirecting to search engines</li>
+            </ul>
+            <h6>Case studies</h6>
+            <ul>
+                <li>Donkey Car (optical flow, heuristic function)</li>
+                <li>Sudoku (computer vision, constraint satisfaction)</li>
+                <li>Etc.</li>
+            </ul>
+            <img src=/assets/projects/mkass-5.png alt='Neural network'>
+        </article>
+        <article slot=page data-page=5>
+            <h4>Curriculum Generations</h4>
+            <p>Some other generations of curriculum can be found in our github page</p>
+        </article>
+        <!-- <article slot=page data-page=5>
+            <h4>Next Gen Curriculum</h4>
+            <img src=/assets/projects/mkass-7.jpg alt='Colab'>
+            <img src=/assets/projects/mkass-8.jpg alt='AI image'>
+            <img src=/assets/projects/mkass-9.png alt='AI image'>
+        </article> -->
+    </turn-book>
+
+    <turn-book reading=right-0 id=MachineryDevops auto-contents>
+        <article slot=page data-page=2>
+            <h4>Machinery DevOps</h4>
+            <img src=/assets/projects/tcm-1.png alt='Machinery DevOps'>
+            <p>
+                We've been serving in the domain of sports science since the beginning. 
+                Over the years, several DevOps projects were completed to facilitate the usage and efficacy of Tai Chi exercise machineries,
+                which act as a partner of <a target=_blank href=https://zh.wikipedia.org/wiki/%E6%8E%A8%E6%89%8B>'Push-Hands'</a> while providing real-time feedback to the practitioner.
+            </p>
+        </article>
+        <article slot=page data-page=3> 
+            <h4>Machinery DevOps</h4>
+            <h5>Curve detection & processing toolbox</h5>
+			<p>
+                Our Client owns a mechanical motion recorder and different versions of motion player to provide practitioners a guidance point’s trajectory. 
+                Important DevOps involves include data denoising; curve smoothing; motion curve visualization; troubleshooting; and data transformation for the compatibility, convention of coordinatizations and data formats for the interuse of these machines.
+            </p>
+            <img src=/assets/projects/tcm-2.png alt='Curve detection'>
+        </article>
+        <article slot=page data-page=4>
+            <h4>Machinery DevOps</h4>
+			<h5>Monocular motion sensing & analytics system</h5>
+			<p>
+                While our Client is a mechanical motion player giving guidance by constrianted on trajectory of a hand, Tai Chi emphasizes on motion of the whole body;
+                therefore this system was developed to provide whole body motion monitoring and analysis by a single webcam.<br>
+                Later, our R&D project concluded that visualization of the center of gravity could serve as biofeedback to help practitioners and hence was desginated as one focus of the system.
+            </p>
+            <img src=/assets/projects/tcm-3.png alt='Motion sensing'>
+        </article>
+        <article slot=page data-page=5>
+            <h4>Machinery DevOps</h4>
+			<h5>Plantar pressure sensing system</h5>
+			<p>
+                To further study the external force of a practitioner, we developed a software system that could boost the performance of the hardware designed by our Client using techniques transferred from the field of computer vision.<br>
+                More specifically, we borrowed the idea of super-resolution to enhance the visualization of the plantar pressure from pixelated input to vector output. 
+                We also computed the center of pressure to serve as biofeedback for practitioners.
+            </p>
+            <img src=/assets/projects/tcm-4.jpg alt='Plantar pressure sensing'>
+        </article>
+        <article slot=page data-page=6>
+            <h4>Machinery DevOps</h4>
+			<h5>DevOps for ergonomics</h5>
+			<p>
+                In an upgraded version of the mechanical motion player, ergonomics was the focus. To help our Client to make the mechanical motion player be responsive to a practitioner's height, we worked in two aspects: 
+                a height-measuring mechanism by computer vision to be input to the motion player, and an adjustment of the machine motion trajectory in scale for the player's output.
+            </p>
+            <img src=/assets/projects/tcm-5.jpg alt='Ergonomics'>
+        </article>
+        <article slot=page data-page=7>
+            <h4>Machinery DevOps</h4>
+			<h5>Expertise</h5>
+			<ul>
+				<li>Framework: Eel, HTML, Javascript, Python</li>
+				<li>Database: SQLite</li>
+				<li>CSS: Bulma, Bootstrap</li>
+				<li>Visualization: Canvas, D3.js</li>
+				<li>Machine Learning: Tensorflow.js, PoseNet</li>
+				<li>Communication: TCP/UDP, WebSockets programming</li>
+			</ul>
+        </article>
+        <article slot=page data-page=8>
+            <h4>Machinery DevOps</h4>
+			<h5>On going/ Coming soon...</h5>
+			<ul>
+				<li>Temporal data analysis on derived quantity ("Qi") from time series</li>
+			</ul>
+            <img src=/assets/projects/tcm-8.jpg>
+        <img src=/assets/projects/tcm-7.png> .
+        014
+        </article>
+    </turn-book>
+</section>
+
+<section id=playground>
+    <h2>Playground.</h2>
+    <card-deck>
+        <flip-card slot=card class=click>
+            <img slot=front src=/assets/pg-annotation.jpg alt='Annotation Pipeline Tools'>
+            <h3 slot=front>Annotation Pipeline Tools<time>2018</time></h3>
+            <a slot=front class=action target=_blank rel=noopener href=http://www.○○ai.com/annotation/edit_video>Play</a>
+            <p slot=back>A collection of tools to annotate human pose keypoints for neural network training.</p>
+            <ul slot=back>
+                <li>PyTorch to train a deep neural network</li>
+                <li>MongoDB to store the model and data</li>
+            </ul>
+        </flip-card>
+        <flip-card slot=card class=click>
+            <img slot=front src=/assets/pg-sudoku.png alt='Visual Sudoku solver'>
+            <h3 slot=front>Visual Sudoku Solver<time>2021</time></h3>
+            <a slot=front class=action target=_blank rel=noopener href=https://www.youtube.com/watch?v=3icb6AdGC4o>Watch</a>
+            <p slot=back>An algorithm that detects Sudoku puzzle captured on the camera and solves it.</p>
+            <ul slot=back>
+                <li>Neural network for AI vision</li>
+                <li>WebAssembly to run Python on browser</li>
+            </ul>
+        </flip-card>
+        <flip-card slot=card class=click checked>
+            <img slot=front src=/assets/pg-holdon.jpg alt='Hold On'>
+            <h3 slot=front>Hold On<time>2019</time></h3>
+            <a slot=front class=action target=_blank rel=noopener href='https://play.google.com/store/apps/details?id=com.○○.holdon'>Play</a>
+            <p slot=back>An artistic camera application to create artistic pictures by holding onto daily scenes. Read more on 
+                <a href=https://○○ai2018.medium.com/3d-spline-interpolation-and-hold-on-9d1916460abe target=_blank rel=noopener>our Medium</a>.
+            </p>
+            <ul slot=back>
+                <li>OpenCV to preprocess image being taken with Gaussian Mixture Model</li>
+            </ul>
+        </flip-card>
+        <flip-card slot=card class=click>
+            <img slot=front src=/assets/pg-motion.jpg alt='Motion Painting'>
+            <h3 slot=front>Motion Painting<time>2019</time></h3>
+            <a slot=front class=action target=_blank rel=noopener href='https://○○ai.github.io/long-exposure'>Play</a>
+            <p slot=back>A web app for body motion painting - use your torso to paint a photo. Read more on 
+                <a href='https://○○ai2018.medium.com/motion-painting-5baa42c81882' target=_blank rel=noopener>our Medium</a>.
+            </p>
+            <ul slot=back>
+                <li>Tensorflow model to segment body into parts</li>
+            </ul>
+        </flip-card>
+        <flip-card slot=card class=click>
+            <img slot=front src=/assets/pg-car.jpeg alt='Donkey Car Autonomous Driving System'>
+            <h3 slot=front>Donkey Car Autonomous Driving System<time>2020</time></h3>
+            <a slot=front class=action target=_blank rel=noopener href='https://www.youtube.com/watch?v=RH96Li2uMEs'>Watch</a>
+            <p slot=back>Automonous driving car with obstacle avoidance & collision diagnosis. Read more on 
+                <a href='https://○○ai2018.medium.com/monocular-obstacle-avoidance-and-collision-detection-for-autonomous-vehicle-exploration-brief-1c6980c65606' target=_blank rel=noopener>our Medium</a>.
+            </p>
+            <ul slot=back>
+                <li>Jetson Nano as computer on car</li>
+                <li>OpenCV </li>
+            </ul>
+        </flip-card>
+    </card-deck>
+</section>
+
+<section id=contacts>
+    <h2>Contacts.</h2>
+    <flip-card class=click>
+        <header slot=front>
+            <ribbon-curve height='200'></ribbon-curve>
+            <h3>Hailey Sun</h3>
+            <h4>Communication</h4>
+            <h5>○○ Artifical Intelligence Limited</h5>
+        </header>
+        <figure slot=front>
+            <img src=/assets/logo.svg alt='○○ Artifical Intelligence Limited'>
+        </figure>
+        <dl slot=front>
+            <dt></dt><dd>bizdev@○○ai.com</dd>
+            <dt></dt><dd>https://○○ai.com</dd>
+            <dt></dt><dd>○○○○ ○○○○</dd>
+            <dt></dt><dd>Hong Kong</dd>
+        </dl>
+        <div slot=back>
+            <img src=/assets/oh-way-way.svg alt='oh-way-way'>
+            <p>What's this mark? Have you seen it before? Email your answer to us and we may prepare a surprise for you!</p>
+        </div>
+    </flip-card>
+    <ul>
+        <li><a class=flowing target=_blank rel=noopener href='https://○○ai2018.medium.com/'></a></li>
+        <li><a class=flowing target=_blank rel=noopener href='https://github.com/○○AI/'></a></li>
+        <li><a class=flowing target=_blank rel=noopener href='https://www.youtube.com/channel/UCKFz5SZ-kPMFg_7ou6MgJfQ'></a></li>
+        <li><a class=flowing target=_blank rel=noopener href='https://play.google.com/store/apps/developer?id=○○+AI'></a></li>
+        <li><a class=flowing target=_blank rel=noopener href='https://hk.linkedin.com/in/○○-4034473b'></a></li>
+    </ul>
+</section>
+
+<footer>
+    © 2018～<time>2022</time>. ○○ Artificial Intelligence Limited.
+</footer>
+
+<script>
+    document.querySelector('footer time').innerText = new Date().getYear() + 1900;
+    document.querySelector('#projects input').onchange = ev => {
+        if (ev.target.checked) {
+            [...document.querySelectorAll('turn-book')].reverse().forEach(book => {
+                [...book.querySelectorAll('#projects book-page>[slot][data-page]')]
+                .sort((p1, p2) => p2.getAttribute('data-page') - p1.getAttribute('data-page'))
+                .forEach(p => book.after(p.cloneNode(true)));
+                book.after(book.querySelector('h3').cloneNode(true));
+                book.style.display = 'none';
+            });
+        } else {
+            document.querySelectorAll('turn-book~:not(turn-book)').forEach(el => el.remove());
+            document.querySelectorAll('turn-book').forEach(book => book.style.display = 'block');
+        }
+    }
+    const sections = document.querySelectorAll('dual-nav~header,dual-nav~section');
+    sections.forEach(sec => sec.prepend(document.createElement('template')));
+    const hide = (section, hide) => {
+        const template = section.querySelector('template').content;
+        if (hide) {
+            //section.style.height = section.clientHeight + 'px';
+            //section.querySelectorAll('template~*').forEach(el => template.appendChild(el));
+            section.style.visibility = 'hidden';
+        } else {
+            //section.appendChild(template);
+            section.removeAttribute('style');
+        }
+    }
+    window.onscroll = () => sections.forEach(sec => 
+        hide(sec, window.scrollY > sec.offsetTop + sec.clientHeight - 50 || window.scrollY + window.innerHeight < sec.offsetTop + 50)
+    );
+    document.querySelectorAll('.popup').forEach(el => el.onclick = () => {
+        document.querySelector('#popup').click();
+        document.querySelector('label[for=popup]').innerHTML = '';
+        document.querySelector('#popup+label').append(document.querySelector(el.getAttribute('href')).content.cloneNode(true));
+    });
+    document.querySelector('#popup').onchange = ev => 
+        !ev.target.checked && (document.querySelector('label[for=popup]').innerHTML = '');
+</script>

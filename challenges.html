@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<title>○○人工智能有限公司　○○ Artifical Intelligence Limited</title>
+<meta name=description content="○○ Artificial Intelligence Limited provides end-to-end AI solutions from design, data processing to streamlined applications. We've been working on machine learning applications, deep neural networks, and data-analytics-friendly platforms.">
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta charset=utf-8>
+<style>
+body {
+  margin:auto;
+  padding:0 1em;
+  max-width:1000px;
+  text-align:justify;font-size:18px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+figure {
+  margin:auto;
+  text-align:center;
+}
+img {
+  width:6em;
+  margin-top:2em;
+}
+h1,h2 {
+  text-decoration:underline;
+  text-decoration-color:purple;
+  text-align:center;
+}
+h1,h2,h3 {
+  font-weight:unset;
+}
+article:not(:target) {
+  display:none;
+}
+article {
+  border-top:.2em double purple;
+  margin-top:4em;
+}
+p a {
+  border:.1em solid;border-radius:9em;
+  padding:.05em .5em;
+  font-size:.8em;
+  text-decoration:none;
+}
+</style>
+
+<figure><img src=/assets/logo.svg alt='○○ AI'></figure>
+<h1>Welcome to the ○○ AI Challenge</h1>
+<h3><a href="https://○○ai.com/">○○ AI</a> is in Hong Kong and we're looking for data scientists to help us build amazing products in Hong Kong, China and the world. We also have internships and graduate programs.</h3>
+<p>Still reading?  OK! Here are a few programming problems that we found interesting and challenging. They are much tougher than anything you'd face during a job interview, so be ready for a challenge.</p>
+<p>Feel free to use any language and take as long as you like. If you make progress on a problem, or you're not sure why your answer isn't accepted, submit what you've got to <b>bizdev@○○ai.com</b> and we'll get back to you.</p>
+<p>With the formalities out of the way, it's time to pick a challenge.</p>
+<ol>
+  <li><a href=#curve-classification>Curve classification</a></li>
+  <li><a href=#noise-classification>Noise classification</a></li>
+  <li><a href=#document-annotation>Document annotation</a></li>
+  <li><a href=#plantar-pressure>Plantar pressure & body balance</a></li>
+  <li><a href=#timeseries-analysis>Topological time series analysis</a></li>
+</ol>
+
+<article id=curve-classification>
+  <h2>Curve classification</h2>
+  <p>
+    You are given sets of 2D points. Each set is a projection of points of one of the two 3D closed curves subdivided at equal intervals of the parameter to a random plane, i.e. the points on the curves are multiplied on the left by a random orthogonal matrix. 
+    The formulas of the two 3D curves are:
+  <dl>
+    <dt>Curve 1
+    <dd>x(𝑡) = 9 cos 0.5π𝑡＋0.3 sin 1.5π𝑡
+    <dd>y(𝑡) = 3 cos (1.5π𝑡＋0.45π) (2＋sin π𝑡)＋0.5 cos 2.5π𝑡
+    <dd>z(𝑡) = 8.5 cos (0.5π𝑡＋1.3π)＋0.6 sin 2π𝑡
+  </dl>
+  <dl>
+    <dt>Curve 2
+    <dd>x(𝑡) = 2 cos 0.5π𝑡＋0.3 sin 1.5π𝑡
+    <dd>y(𝑡) = 6 cos (0.5π𝑡＋1.45π)＋1.5 cos 2.5π𝑡
+    <dd>z(𝑡) = 7 cos (0.5π𝑡＋1.3π)＋0.6 sin 2π𝑡
+  </dl>
+  <p>
+    where parameter 𝑡 ∈ [0,4].
+  <p>
+    You are given 500 sets of projected points from curve 1 <a href=https://drive.google.com/file/d/1J1HVzURgcfNcUSzA_AbSumngrQ3nuuTx/view?usp=sharing>Download</a>
+    and 500 sets from curve 2 <a href=https://drive.google.com/file/d/1jAkc1KjUrNeZVy1wREaixDQNl0-XOCLG/view?usp=sharing>Download</a> to check your program. Each set contains 20 projected points. 
+    So if the first point is projected from a point on a curve at 𝑡 = 𝑡₀, then the second point is projected from the point on the curve at 𝑡 = 𝑡₀ + 0.2, the third at 𝑡 = 𝑡₀ + 0.4, and so on. 
+    Each set is given in plain text as a 2×20 matrix where each row of the matrices is in a line and elements of a row are separated by comma.
+  <p>
+    Also, you are given 500 sets of unlabelled projected points <a href=https://drive.google.com/file/d/1r86wNvjsU2OTy1Y2_qZhKXqGh4Wo47fH/view?usp=sharing>Download</a>, each set also contains 20 projected points, and you need to identify which of the two curves each set is from.
+  <p>
+    Your answer should be a list of 500 integers. Each integer is 1 if the set is from curve 1, or 2 if the set is from curve 2.
+  <p>
+    A submission with perfect score had been received. You are encouraged to try other challenges.
+</article>
+
+<article id=noise-classification>
+  <h2>Noise classification</h2>
+  <p>
+    You'll be given labelled noise data from different sources: construction site, vehicles, humans, etc. Please construct a neural network to classify new noise data to these classes.
+  <p>
+    Interested parties please contact us for the data.
+</article>
+
+<article id=document-annotation>
+  <h2>Document annotation</h2>
+  <p>
+    The dataset <a href=https://drive.google.com/file/d/16l-mA7HjgYUACYugq_FpgxX3HdnQyufu/view?usp=sharing>Download</a> has 220 items manually labeled with the following 10 categories:
+  <ul>
+    <li>Name<li>College Name<li>Degree<li>Graduation Year<li>Years of Experience<li>Companies worked at<li>Designation<li>Skills<li>Location<li>Email Address
+  </ul>
+  <p>
+    You are asked to build or describe a model that annotate any documents or extract any useful information from the documents.
+</article>
+
+<article id=plantar-pressure>
+  <h2>Plantar pressure & body balance</h2>
+  <p>
+    The plantar pressure board measures the pressure exerted by different points of the sole when a person is standing on it, hence a sparse matrix is generated.
+  <p>
+    The body balance sensor is attached to the waist and gives a single score of balance.
+  <p>
+    You are asked to build a model to find the relationship between these 2 measures. Interested parties please contact us.
+</article>
+
+<!--article id=keyword-extraction>
+  <h2>Web crawling & Keyword extraction</h2>
+  <p>
+	A satisfactory response had been received. New challenges had been evolved from there.
+  <p>
+    “○○○○” is a <a href="http://mkass.○○info.com">school on cloud</a> owned by <a href="http://www.○○info.com/">○○ Information Limited</a> written in Chinese. 
+    In this product, the science and mathematics curriculum of HKDSE is discretized into hundreds of modules. Consider the immediate prerequisite-modules of each module, individual modules were synthesized and organized into an directed acyclic graph.
+  <p>
+    The list of modules in js format can be found in <a href="http://mkass.○○info.com/spider/module_list.js"> this link</a>.
+  <p>
+    Under each module, there are a few given attributes, including "label", "path", "description" "id" and "lessons". Take the module with "label":"力矩" as an example. Its "path": "Phy_James_M8" means that materials of this module are put under 
+    <a href="http://mkass.○○info.com/lesson/Phy_James_M8/">the page "http://mkass.○○info.com/lesson/Phy_James_M8/"</a>. Its "description" are words in the path under class="row title". Its "id": 20205 will be used later.
+  <p>
+    The prerequisite-relations of modules in also js format can be found in <a href="http://mkass.○○info.com/spider/relation_list.js"> this link</a>. Relations are defined with the "id" attributes of modules.
+  <p>
+    Now you are asked to add an attribute "tags" for each relation. Your suggestion should give several possible tags that justify the prerequisite-relation between each pair of modules in <a href="http://mkass.○○info.com/spider/relation_list.js"> the mentioned list</a>. One may give as many tags as s/he wants. 
+    You shall described in details on how to perform this task, or you shall provide scripts that can generate these tags by web crawling, segmentation, keyword extraction and other techniques.
+</article-->
+
+<article id=timeseries-analysis>
+  <h2>Topological time series analysis</h2>
+  <p>
+    We built a footprint recorder for our Client to record the online study time of the students on each page and quiz.
+  <p>
+    If the student opens multiple tabs simultaneously, the study time will overlap. You're required to employ topological time series analysis to investigate the footprint of the students. Interested parties please contact us.
+</article>

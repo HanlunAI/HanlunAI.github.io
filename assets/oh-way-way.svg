@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+    <style>
+        path {fill-rule:evenodd;}
+        use {transform-origin:0 0;}
+        use:nth-of-type(2) {transform:rotate(90deg);}
+        use:nth-of-type(3) {transform:rotate(180deg);}
+        use:nth-of-type(4) {transform:rotate(270deg);}
+        g {transform:rotate(45deg);}
+    </style>
+    <g>
+        <path d="M 29.9437,-8.0234 A 31,31,0,0,0,8.0234,-29.9437 a 13,13,0,0,1,-16.0468,0 A 31,31,0,0,0,-29.9437,-8.0234 a 13,13,0,0,1,0,16.0468 A 31,31,0,0,0,-8.0234,29.9437,a 13,13,0,0,1,16.0468,0 A 31,31,0,0,0,29.9437,8.0234 a 13,13,0,0,1,0,-16.0468 z
+        M 0,-20 a 20,20,0,0,0,0,40 a 20,20,0,0,0,0,-40 z"/>
+        <defs>
+            <path id="blade" d="M 37,-4 L 62,-9 L 87,-4 a 4.25,4.25,0,0,1,0,8 L 62,9 L 37,4 a 4.25,4.25,0,0,1,0,-8 Z"/>
+        </defs>
+        <use href="#blade" />
+        <use href="#blade" />
+        <use href="#blade" />
+        <use href="#blade" />
+    </g>
+</svg>
