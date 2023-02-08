@@ -178,7 +178,7 @@ customElements.define('turn-book', class extends HTMLElement {
         const cover = document.createElement('h3');
         cover.slot = 'page';
         cover.setAttribute('data-page', 0);
-        cover.innerHTML = `${this.id.replace(/([A-Z])/g, ' $1')}<br><small>○○ AI</small>`;
+        cover.innerHTML = `${this.id.replace(/([A-Z])/g, ' $1')}<br><small>Hanlun AI</small>`;
         this.prepend(cover);
     }
     contents() {
